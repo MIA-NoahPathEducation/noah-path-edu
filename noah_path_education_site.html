@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah Path Education</title>
+  <meta name="description" content="Noah Path Education - Your trusted global education partner." />
+  <meta name="keywords" content="study abroad, education consultancy, Australia, UK, Canada, student visa" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800" x-data="{ lang: 'en' }">
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="text-xl font-bold">Noah Path Education</div>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:underline" x-text="lang === 'en' ? 'About Us' : '关于我们'"></a>
+      <a href="#destinations" class="hover:underline" x-text="lang === 'en' ? 'Destinations' : '留学国家'"></a>
+      <a href="#services" class="hover:underline" x-text="lang === 'en' ? 'Services' : '服务项目'"></a>
+      <a href="#stories" class="hover:underline" x-text="lang === 'en' ? 'Success Stories' : '成功案例'"></a>
+      <a href="#contact" class="hover:underline" x-text="lang === 'en' ? 'Contact Us' : '联系我们'"></a>
+    </nav>
+    <button @click="lang = lang === 'en' ? 'zh' : 'en'" class="ml-4 px-2 py-1 border rounded">
+      <span x-text="lang === 'en' ? '中文' : 'EN'"></span>
+    </button>
+  </header>
+
+  <!-- Hero with Video -->
+  <section class="bg-blue-100 text-center py-16">
+    <div class="mb-4">
+      <video class="mx-auto w-full max-w-3xl rounded" autoplay muted loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <h1 class="text-4xl font-bold mb-2" x-text="lang === 'en' ? 'Your Global Education Partner' : '您的全球留学伙伴'"></h1>
+    <p class="text-lg" x-text="lang === 'en' ? 'Study Abroad with Confidence' : '安心留学，成就未来'"></p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="p-8 bg-white">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'Our Services' : '我们的服务'"></h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li x-text="lang === 'en' ? 'Professional education counselling' : '专业留学咨询' "></li>
+      <li x-text="lang === 'en' ? 'Fast & reliable university applications' : '高效可靠的申请流程' "></li>
+      <li x-text="lang === 'en' ? 'Free consultation and visa support' : '免费咨询与签证支持' "></li>
+      <li x-text="lang === 'en' ? 'Partnered with 100+ institutions worldwide' : '合作全球100+高校' "></li>
+    </ul>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'Destinations We Cover' : '我们覆盖的国家'"></h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div><strong>Australia:</strong> Top universities, post-study work rights.</div>
+      <div><strong>UK:</strong> Rich tradition, short Master’s degrees.</div>
+      <div><strong>Canada:</strong> Immigration pathway, affordable tuition.</div>
+      <div><strong>New Zealand:</strong> Safe, scenic, student-friendly.</div>
+      <div><strong>USA:</strong> Ivy League & global institutions.</div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section id="stories" class="p-8 bg-white">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'Success Stories' : '成功案例'"></h2>
+    <ul class="space-y-2">
+      <li>Maria from Brazil – UNSW Australia</li>
+      <li>Ahmed from Egypt – University of Toronto</li>
+      <li>Li Wei from China – UCL, UK</li>
+    </ul>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'Frequently Asked Questions' : '常见问题解答'"></h2>
+    <ul class="space-y-2">
+      <li><strong>Q:</strong> Do I need IELTS?<br /><strong>A:</strong> It depends on your target country and university.</li>
+      <li><strong>Q:</strong> How long does visa processing take?<br /><strong>A:</strong> Usually 2-8 weeks depending on country.</li>
+    </ul>
+  </section>
+
+  <!-- News Section -->
+  <section class="p-8 bg-white">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'News & Updates' : '新闻与更新'"></h2>
+    <ul class="space-y-2">
+      <li>June 2025 – New scholarships in Australia now open</li>
+      <li>May 2025 – Canada visa updates announced</li>
+    </ul>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'About Noah Path Education' : '关于Noah Path Education'"></h2>
+    <p x-text="lang === 'en' ? 'Based in Australia and China. We are QEAC certified and help students study abroad with care and professionalism.' : '总部设在澳洲与中国，持有QEAC资格，致力于为学生提供安心专业的留学服务。'"></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-8 bg-white">
+    <h2 class="text-2xl font-bold mb-4" x-text="lang === 'en' ? 'Contact Us' : '联系我们'"></h2>
+    <p>Email: noahpatheducation@gmail.com</p>
+    <p>WeChat: noahpathedu | WhatsApp: +61400000000</p>
+    <p>Offices in Melbourne & Jinan</p>
+    <form action="https://formspree.io/f/xknldewq" method="POST" class="mt-4 space-y-4">
+      <input type="text" name="name" placeholder="Full Name" class="w-full p-2 border" required />
+      <input type="email" name="email" placeholder="Email" class="w-full p-2 border" required />
+      <input type="text" name="country" placeholder="Country of Interest" class="w-full p-2 border" />
+      <input type="text" name="level" placeholder="Level of Study" class="w-full p-2 border" />
+      <textarea name="message" placeholder="Message" class="w-full p-2 border"></textarea>
+      <button class="bg-blue-600 text-white px-4 py-2">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-4 space-y-2">
+    <p>© 2025 Noah Path Education | ABN Registered | Powered by GPT / OpenAI</p>
+    <div class="flex justify-center space-x-4">
+      <a href="#" title="Instagram">Instagram</a>
+      <a href="#" title="XHS">小红书</a>
+      <a href="#" title="Douyin">抖音</a>
+    </div>
+  </footer>
+
+  <!-- CRM Integration Placeholder -->
+  <script>
+    // Example CRM integration (pseudo-code or to be replaced with real SDK/script)
+    // HubSpot or Zoho can be integrated via their embed code here.
+  </script>
+</body>
+</html>
