@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah Path Education</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <style>
+    .hero-bg {
+      background: linear-gradient(to right, #0073e6, #00aaff);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="logo.png" alt="Noah Path Logo" class="h-10 mr-3" />
+        <span class="text-xl font-bold text-blue-700">Noah Path Education</span>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#destinations" class="hover:text-blue-600">Destinations</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg text-white text-center py-28 mt-16">
+    <h1 class="text-5xl font-bold">Your Global Education Gateway</h1>
+    <p class="mt-4 text-xl">Study Abroad with Expert Guidance and Confidence</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="p-10 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-4 border rounded shadow">
+          <h3 class="font-bold text-lg mb-2">Education Counselling</h3>
+          <p>Personalized guidance based on your goals.</p>
+        </div>
+        <div class="p-4 border rounded shadow">
+          <h3 class="font-bold text-lg mb-2">Application Support</h3>
+          <p>Apply to top universities across the world efficiently.</p>
+        </div>
+        <div class="p-4 border rounded shadow">
+          <h3 class="font-bold text-lg mb-2">Visa Assistance</h3>
+          <p>Expert help with the entire visa process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-10 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p>Noah Path Education is a trusted global education consultancy based in Australia and China, providing end-to-end support to students aspiring to study abroad. We are QEAC certified and partner with over 100 institutions worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-10 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p>Email: noahpatheducation@gmail.com</p>
+      <p>Offices in Melbourne & Jinan</p>
+      <form class="mt-6 grid gap-4 max-w-xl">
+        <input type="text" placeholder="Full Name" class="p-3 border rounded" />
+        <input type="email" placeholder="Email" class="p-3 border rounded" />
+        <textarea placeholder="Message" class="p-3 border rounded h-32"></textarea>
+        <button class="bg-blue-600 text-white py-2 px-4 rounded">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-4 mt-10">
+    <p>© 2025 Noah Path Education | All rights reserved.</p>
+  </footer>
+</body>
+</html>
